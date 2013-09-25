@@ -1,3 +1,18 @@
 [submodule "bundle/vim-pathogen"]
 	path = bundle/vim-pathogen
 	url = git://github.com/tpope/vim-pathogen.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = git://github.com/tpope/vim-markdown.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/gocode.vim"]
+	path = bundle/gocode.vim
+	url = https://github.com/golangtw/gocode.vim.git
+[submodule "bundle/go.vim"]
+	path = bundle/go.vim
+	url = https://github.com/golangtw/go.vim.git
+[submodule "bundle/vim-godef"]
+	path = bundle/vim-godef
+	url = https://github.com/dgryski/vim-godef.git
