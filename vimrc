@@ -380,6 +380,10 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
         \ 'ctagsargs' : '-sort -silent'
     \ }
 
+    " --- goimports
+    autocmd BufWritePre *.go :Fmt
+
+
     " --- nerdtree
     nnoremap <silent><F5> :NERDTreeToggle<CR>
 
