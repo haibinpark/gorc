@@ -23,7 +23,7 @@ set bs=2		    " allow backspacing over everything in insert mode
 set history=50		" keep 50 lines of command line history
 set ruler	    	" show the cursor position all the time
 set autoread		" auto read when file is changed from outside
-set nu              " display line number
+" set nu              " display line number
 set ts=4            " tabstop 4
 set wak=no          " disable GUI alt menu
 set noswapfile
@@ -115,11 +115,7 @@ endfunction
 autocmd FileType c,cpp,cc  set cindent comments=sr:/*,mb:*,el:*/,:// cino=>s,e0,n0,f0,{0,}0,^-1s,:0,=s,g0,h1s,p2,t0,+2,(2,)20,*30
 
 
-" Python
-"autocmd BufNewFile,BufRead *.py set ts=2 sts=2 sw=2 noet
 
-" Ruby
-autocmd FileType ruby,eruby,yaml set softtabstop=2 shiftwidth=2 tabstop=2
 
 " Go
 au FileType go au BufWritePre <buffer> Fmt
@@ -263,15 +259,15 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
     " enable omni completion. (ctrl-x ctrl-o)
     set cot=menuone,preview
     autocmd insertleave * if pumvisible() == 0|pclose|endif
-    autocmd filetype html,markdown setlocal omnifunc=htmlcomplete#Completetags
-    autocmd filetype javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-    autocmd filetype python setlocal omnifunc=pythoncomplete#Complete
-    autocmd filetype xml setlocal omnifunc=xmlcomplete#completetags
-    autocmd filetype css set omnifunc=csscomplete#CompleteCSS
-    autocmd filetype c set omnifunc=ccomplete#Complete
-    autocmd filetype java set omnifunc=javacomplete#Complete
-    autocmd filetype php set omnifunc=phpcomplete#CompletePHP
-    autocmd FileType ruby set omnifunc=rubycomplete#Complete
+"    autocmd filetype html,markdown setlocal omnifunc=htmlcomplete#Completetags
+"    autocmd filetype javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+"    autocmd filetype python setlocal omnifunc=pythoncomplete#Complete
+"    autocmd filetype xml setlocal omnifunc=xmlcomplete#completetags
+"    autocmd filetype css set omnifunc=csscomplete#CompleteCSS
+"    autocmd filetype c set omnifunc=ccomplete#Complete
+"    autocmd filetype java set omnifunc=javacomplete#Complete
+"    autocmd filetype php set omnifunc=phpcomplete#CompletePHP
+"    autocmd FileType ruby set omnifunc=rubycomplete#Complete
 
     " use syntax complete if nothing else available
     if has("autocmd") && exists("+omnifunc")
