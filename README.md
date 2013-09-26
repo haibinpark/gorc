@@ -1,7 +1,7 @@
-govimrc
+gorc
 =======
 
-gorc for golang developement
+gorc for golang developement envirement
 
 ## 准备环境  
 
@@ -10,7 +10,12 @@ gorc for golang developement
 `mkdir ~/.bin`
 
 ### 克隆配置
-`git clone https://github.com/haibinpark/govimrc .vim`  
+`git clone https://github.com/haibinpark/gorc.vim`  
+
+### 安装Go包
+`go get -u github.com/jstemmer/gotags`  
+`go get -u github.com/nsf/gocode`  
+`go get -u code.google.com/p/rog-go/exp/cmd/godef`
 
 ## 初始化配置  
 
