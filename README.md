@@ -28,21 +28,21 @@ gorc for golang developement envirement
 
 ## 插件管理 
 ### 添加插件  
-**添加mardown插件**
+**添加mardown插件**  
 `git submodule add git://github.com/tpope/vim-markdown.git bundle/vim-markdown`
 ### 移除插件  
-**删除go.vim插件**
+**删除go.vim插件**  
 1. 删除git记录  
 `git rm bundle/go.vim`  
 2. 删除文件  
 `rm bundle/go.vim`  
-3. 修正.gitmodules
+3. 修正.gitmodules  
 移除和go.vim相关的内容  
-4. 提交修改后的.gitmodules
-`git add .gitmodules`
-`git commit -m "Remove vim plugin go.vim"
+4. 提交修改后的.gitmodules  
+`git add .gitmodules`  
+`git commit -m "Remove vim plugin go.vim"`    
 5. 同步submodule  
-`git submodule sync`
+`git submodule sync`  
 
 
 ## 使用技巧
