@@ -58,11 +58,15 @@ export GOOS=linux
 export PATH=$GOROOT/bin:${GOPATH://bin//}/bin:$PATH
 
 #Qt
-export QT_HOME=$HOME/tools/Qt5.1.1/5.1.1/gcc_64/bin
-export PATH=$QT_HOME:$PATH
+export QT_HOME=$HOME/tools/Qt5.1.1/5.1.1/gcc_64
+export PATH=$QT_HOME/bin:$PATH
+export LD_LIBRARY_PATH=$QT_HOME/lib/:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$QT_HOME/plugins/:$LD_LIBRARY_PATH
+export LIBRARY_PATH=$QT_HOME/lib/:$LIBRARY_PATH
+export LIBRARY_PATH=$QT_HOME/plugins/:$LIBRARY_PATH
 
 #JDK
-export JAVA_HOME=$HOME/tools/jdk1.7.0_40
+export JAVA_HOME=$HOME/tools/jdk1.7.0_25
 export PATH=$JAVA_HOME/bin:$PATH
 
 #manual bin path
