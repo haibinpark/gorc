@@ -21,7 +21,7 @@ if [ $? != 0 ]; then
     #$cmd neww -n mutt -t $session "mutt"
     $cmd neww -n irssi -t $session "irssi"
     $cmd neww -n cmus -t $session "cmus"
-    $cmd neww -n zsh -t $session "zsh"
+    $cmd neww -n go-dev -t $session "go-dev"
     #$cmd splitw -h -p 50 -t $session "zsh"
     $cmd selectw -t $session:4
 fi
