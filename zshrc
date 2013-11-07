@@ -65,6 +65,12 @@ export LD_LIBRARY_PATH=$QT_HOME/plugins/:$LD_LIBRARY_PATH
 export LIBRARY_PATH=$QT_HOME/lib/:$LIBRARY_PATH
 export LIBRARY_PATH=$QT_HOME/plugins/:$LIBRARY_PATH
 
+#C++ Include
+export CPLUS_INCLUDE_PATH=/usr/pgsql-9.3/include:$CPLUS_INCLUDE_PATH
+export PQ_LIB_PATH=/usr/pgsql-9.3/lib
+export LD_LIBRARY_PATH=$PQ_LIB_PATH:$LD_LIBRARY_PATH
+export LIBRARY_PATH=$PQ_LIB_PATH:$LIBRARY_PATH
+
 #JDK
 export JAVA_HOME=$HOME/tools/jdk1.7.0_25
 export PATH=$JAVA_HOME/bin:$PATH
@@ -83,3 +89,12 @@ function _get_tags {
         }
         compctl -x 'C[-1,-t]' -K _get_tags -- vim
 #end vim tags
+
+#tmux
+#if [[ "$TERM" != "screen-256color" ]]; then
+#   exec tmux -S /var/tmux/$USER new-session -A -s "$USER"
+#fi
+if [[ $SHLVL != "2" ]]; then
+    tmux -S /var/tmux/$USER new-session -A -s "$USER"
+fi
+
