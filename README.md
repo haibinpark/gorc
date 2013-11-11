@@ -19,7 +19,7 @@ gorc for golang developement envirement
 
 ## 初始化配置  
 
-`git submodule update --init`  
+`git submodule update --init --recursive`  
 `git submodule foreach git pull origin master`
 
 
