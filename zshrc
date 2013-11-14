@@ -95,6 +95,6 @@ function _get_tags {
 #   exec tmux -S /var/tmux/$USER new-session -A -s "$USER"
 #fi
 if [[ $SHLVL != "2" ]]; then
-    tmux -S /var/tmux/$USER new-session -A -s "$USER"
+    tmux -S /var/tmux/$USER new-session -s "$USER"
 fi
 

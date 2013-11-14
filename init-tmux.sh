@@ -18,11 +18,9 @@ $cmd has -t $session 2> /dev/null
 
 if [ $? != 0 ]; then
     $cmd new -d -n vim -s $session "vim"
-    #$cmd neww -n mutt -t $session "mutt"
     $cmd neww -n irssi -t $session "irssi"
     $cmd neww -n cmus -t $session "cmus"
     $cmd neww -n go-dev -t $session "go-dev"
-    #$cmd splitw -h -p 50 -t $session "zsh"
     $cmd selectw -t $session:4
 fi
 
