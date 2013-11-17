@@ -16,6 +16,7 @@ gorc for golang developement envirement
 `go get -u github.com/jstemmer/gotags`  
 `go get -u github.com/nsf/gocode`  
 `go get -u code.google.com/p/rog-go/exp/cmd/godef`
+`go get -u github.com/bradfitz/goimports`
 
 ## 初始化配置  
 
@@ -56,3 +57,6 @@ gorc for golang developement envirement
 
 [Best of VIM Tips, gVIM's Key Features zzapper][vimtips-link]
 [vimtips-link]:http://www.rayninfo.co.uk/vimtips.html
+
+[配置vim的Go开发环境][vim-golang]
+[vim-golang]:http://monnand.me/p/vim-golang-environment/zhCN/
