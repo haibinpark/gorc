@@ -54,9 +54,21 @@ gorc for golang developement envirement
 
 [tmux的使用方法和个性化配置][tmux-link]
 [tmux-link]:http://mingxinglai.com/cn/2012/09/tmux/
+重新载入tmux配置文件的命令:
+C-b :进入tmux命令模式
+:source-file ~/.tmux.config
+
 
 [Best of VIM Tips, gVIM's Key Features zzapper][vimtips-link]
 [vimtips-link]:http://www.rayninfo.co.uk/vimtips.html
 
 [配置vim的Go开发环境][vim-golang]
 [vim-golang]:http://monnand.me/p/vim-golang-environment/zhCN/
+
+
+[安装配置YouCompleteMe][vim-ycm]
+[vim-ycm]:https://github.com/Valloric/YouCompleteMe
+具体的安装方法也比较简单，这里以ubuntu为例:
+`sudo apt_get install cmake python-dev`  
+`sudo ./install.sh --clang-completer `  
+
