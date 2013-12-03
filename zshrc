@@ -48,7 +48,7 @@ alias ~='cd ~'
 
 #GOPATH
 export PROJS=$HOME/projs
-export GOPATH=$PROJS
+export GOPATH=$PROJS/go
 
 #Go Envirement
 export GOROOT=$HOME/tools/go
