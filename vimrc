@@ -514,5 +514,5 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
     hi EasyMotionShade  ctermbg=none ctermfg=blue
 
     " YouCompletMe for c++
-    let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+    "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
     " nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
