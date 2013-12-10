@@ -21,7 +21,7 @@ if [ $? != 0 ]; then
     $cmd neww -n irssi -t $session "irssi"
     $cmd neww -n cmus -t $session "cmus"
     $cmd neww -n go-dev -t $session "go-dev"
-    $cmd selectw -t $session:4
+    $cmd selectw -t $session:3
 fi
 
 $cmd att -t $session

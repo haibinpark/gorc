@@ -9,7 +9,8 @@ ln -sf ~/.vim/zshrc ~/.zshrc
 ln -sf ~/.vim/tmuxrc ~/.tmux.conf
 
 #create .bin folder
+
 mkdir ~/.bin
 
 #create tmux shell
-ln -sf ~/.vim/init-tmux.sh ~/.bin/initmux
+ln -sf ~/.vim/init-tmux.sh ~/.bin/sm

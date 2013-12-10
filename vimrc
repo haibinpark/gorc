@@ -322,7 +322,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
     "endif
 
     " --- supertab
-    "let g:SuperTabDefaultCompletionType = "context"
+    let g:SuperTabDefaultCompletionType = "context"
     "let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
     " --- ctrlp
@@ -340,7 +340,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
     "\ }
 
     " --- taglist
-    " nmap <silent><F8> :TlistToggle<CR>
+    nmap <silent><F8> :TlistToggle<CR>
     " imap <silent><F8> <C-o>:TlistToggle<CR>
     " let Tlist_Use_SingleClick = 1
     " let Tlist_Use_Right_Window = 1
@@ -389,7 +389,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
     highlight clear SignColumn
 
     " --- copy to osx clipboard
-    map <F6> :w !pbcopy<CR><CR>
+    "map <F6> :w !pbcopy<CR><CR>
 
     " --- Switch.vim
     nnoremap - :Switch<cr>
