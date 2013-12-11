@@ -72,7 +72,7 @@ export LD_LIBRARY_PATH=$PQ_LIB_PATH:$LD_LIBRARY_PATH
 export LIBRARY_PATH=$PQ_LIB_PATH:$LIBRARY_PATH
 
 #JDK
-export JAVA_HOME=$HOME/tools/jdk1.7.0_25
+export JAVA_HOME=$HOME/tools/java
 export PATH=$JAVA_HOME/bin:$PATH
 
 #manual bin path
