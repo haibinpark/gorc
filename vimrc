@@ -322,7 +322,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
     "endif
 
     " --- supertab
-    let g:SuperTabDefaultCompletionType = "context"
+    "let g:SuperTabDefaultCompletionType = "context"
     "let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
     " --- ctrlp
@@ -347,7 +347,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
     " let Tlist_Show_One_File = 1
     " let tlist_php_settings = 'php;c:class;d:constant;f:function'
     " --- tagbar
-    nnoremap <silent><F7> :TagbarToggle<CR>
+    nnoremap <silent><F9> :TagbarToggle<CR>
     let g:tagbar_autofocus = 1
     
     let g:tagbar_type_go = {
@@ -395,8 +395,8 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
     nnoremap - :Switch<cr>
 
     " --- SingleCompile
-    nmap <F9> :SCCompile<cr> 
-    nmap <F10> :SCCompileRun<cr>
+    "nmap <F9> :SCCompile<cr> 
+    "nmap <F10> :SCCompileRun<cr>
 
     " --- VimRails
 
