@@ -515,4 +515,8 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 
     " YouCompletMe for c++
     let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
-    " nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+    nnoremap <leader>j :YcmCompleter GoToDefinitionElseDeclaration<CR>
+    nnoremap <F7> :YcmForceCompileAndDiagnostics<CR>
+
+    "F11 代码自由缩进开关
+    set pastetoggle=<F11>
