@@ -19,10 +19,13 @@ $cmd has -t $session 2> /dev/null
 if [ $? != 0 ]; then
     $cmd new -d -n dev -s $session 
     $cmd neww -n debug -t $session
+    $cmd neww -n test -t $session
     $cmd neww -n run -t $session
     $cmd neww -n db -t $session 
     $cmd neww -n file -t $session
+    $cmd neww -n system -t $session
     $cmd neww -n git -t $session
+    $cmd neww -n vim -t $session "vim"
     $cmd selectw -t $session:1
 fi
 
