@@ -24,6 +24,7 @@ if [ $? != 0 ]; then
     $cmd neww -n file -t $session 
     $cmd neww -n sys -t $session 
     $cmd neww -n git -t $session 
+    $cmd neww -n server -t $session 
     $cmd neww -n vim -t $session "vim"
     $cmd selectw -t $session:1
 fi
