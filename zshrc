@@ -78,7 +78,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 #manual bin path
 export PATH=$HOME/.bin:$PATH
 
-
+PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 
 #vim tags
 function _get_tags {
@@ -98,3 +98,7 @@ if [[ $SHLVL != "2" ]]; then
     tmux -S /var/tmux/$USER new-session -s "$USER"
 fi
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
