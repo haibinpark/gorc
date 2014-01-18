@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+#
+ln -sf ~/repos/devrc ~/.vim
+
 # install vimrc
 ln -sf ~/.vim/vimrc ~/.vimrc
 #install zshrc
