@@ -1,1 +1,0 @@
-/home/hipin/.vim
