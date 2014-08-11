@@ -57,19 +57,25 @@ export GOOS=linux
 
 export PATH=$GOROOT/bin:${GOPATH://bin//}/bin:$PATH
 
+
+# ANDROID SDK
+export ANDROID_HOME=$HOME/tools/android-sdk-linux
+
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+
 #Qt
-export QT_HOME=$HOME/tools/Qt5.1.1/5.1.1/gcc_64
-export PATH=$QT_HOME/bin:$PATH
-export LD_LIBRARY_PATH=$QT_HOME/lib/:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=$QT_HOME/plugins/:$LD_LIBRARY_PATH
-export LIBRARY_PATH=$QT_HOME/lib/:$LIBRARY_PATH
-export LIBRARY_PATH=$QT_HOME/plugins/:$LIBRARY_PATH
+# export QT_HOME=$HOME/tools/Qt5.1.1/5.1.1/gcc_64
+# export PATH=$QT_HOME/bin:$PATH
+# export LD_LIBRARY_PATH=$QT_HOME/lib/:$LD_LIBRARY_PATH
+# export LD_LIBRARY_PATH=$QT_HOME/plugins/:$LD_LIBRARY_PATH
+# export LIBRARY_PATH=$QT_HOME/lib/:$LIBRARY_PATH
+# export LIBRARY_PATH=$QT_HOME/plugins/:$LIBRARY_PATH
 
 #C++ Include
-export CPLUS_INCLUDE_PATH=/usr/pgsql-9.3/include:$CPLUS_INCLUDE_PATH
-export PQ_LIB_PATH=/usr/pgsql-9.3/lib
-export LD_LIBRARY_PATH=$PQ_LIB_PATH:$LD_LIBRARY_PATH
-export LIBRARY_PATH=$PQ_LIB_PATH:$LIBRARY_PATH
+# export CPLUS_INCLUDE_PATH=/usr/pgsql-9.3/include:$CPLUS_INCLUDE_PATH
+# export PQ_LIB_PATH=/usr/pgsql-9.3/lib
+# export LD_LIBRARY_PATH=$PQ_LIB_PATH:$LD_LIBRARY_PATH
+# export LIBRARY_PATH=$PQ_LIB_PATH:$LIBRARY_PATH
 
 #JDK
 export JAVA_HOME=$HOME/tools/java
@@ -77,6 +83,10 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 #manual bin path
 export PATH=$HOME/.bin:$PATH
+
+#gradle path setting
+export GRADLE_HOME=$HOME/tools/gradle
+export PATH=$GRADLE_HOME/bin:$PATH
 
 PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 
