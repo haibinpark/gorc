@@ -90,6 +90,19 @@ export PATH=$GRADLE_HOME/bin:$PATH
 
 PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 
+# ANDROID_HOME
+export ANDROID_HOME=$HOME/tools/android-studio/sdk
+
+PATH=$ANDROID_HOME/platform-tools:$PATH
+
+
+#GRADLE
+export GRADLE_HOME=$HOME/tools/gradle
+
+PATH=$GRADLE_HOME/bin:$PATH
+
+
+
 #vim tags
 function _get_tags {
   [ -f ./tags ] || return
