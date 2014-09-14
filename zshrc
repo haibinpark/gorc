@@ -47,8 +47,11 @@ alias cls='clear'
 alias ~='cd ~'
 
 #GOPATH
+export DEP=$HOME/projs/dep/go
+export GOPATH=$DEP:$GOPATH
+
 export PROJS=$HOME/projs
-export GOPATH=$PROJS/go
+export GOPATH=$PROJS/go:$GOPATH
 
 #Go Envirement
 export GOROOT=$HOME/tools/go
@@ -57,29 +60,40 @@ export GOOS=linux
 
 export PATH=$GOROOT/bin:${GOPATH://bin//}/bin:$PATH
 
+
+# ANDROID SDK
+export ANDROID_HOME=$HOME/tools/android-sdk-linux
+
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+
 #Qt
-export QT_HOME=$HOME/tools/Qt5.1.1/5.1.1/gcc_64
-export PATH=$QT_HOME/bin:$PATH
-export LD_LIBRARY_PATH=$QT_HOME/lib/:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=$QT_HOME/plugins/:$LD_LIBRARY_PATH
-export LIBRARY_PATH=$QT_HOME/lib/:$LIBRARY_PATH
-export LIBRARY_PATH=$QT_HOME/plugins/:$LIBRARY_PATH
+# export QT_HOME=$HOME/tools/Qt5.1.1/5.1.1/gcc_64
+# export PATH=$QT_HOME/bin:$PATH
+# export LD_LIBRARY_PATH=$QT_HOME/lib/:$LD_LIBRARY_PATH
+# export LD_LIBRARY_PATH=$QT_HOME/plugins/:$LD_LIBRARY_PATH
+# export LIBRARY_PATH=$QT_HOME/lib/:$LIBRARY_PATH
+# export LIBRARY_PATH=$QT_HOME/plugins/:$LIBRARY_PATH
 
 #C++ Include
-export CPLUS_INCLUDE_PATH=/usr/pgsql-9.3/include:$CPLUS_INCLUDE_PATH
-export PQ_LIB_PATH=/usr/pgsql-9.3/lib
-export LD_LIBRARY_PATH=$PQ_LIB_PATH:$LD_LIBRARY_PATH
-export LIBRARY_PATH=$PQ_LIB_PATH:$LIBRARY_PATH
+# export CPLUS_INCLUDE_PATH=/usr/pgsql-9.3/include:$CPLUS_INCLUDE_PATH
+# export PQ_LIB_PATH=/usr/pgsql-9.3/lib
+# export LD_LIBRARY_PATH=$PQ_LIB_PATH:$LD_LIBRARY_PATH
+# export LIBRARY_PATH=$PQ_LIB_PATH:$LIBRARY_PATH
 
 #JDK
-export JAVA_HOME=/usr/java/jdk1.7.0_51/
+export JAVA_HOME=$HOME/tools/java
 export PATH=$JAVA_HOME/bin:$PATH
 
 #manual bin path
 export PATH=$HOME/.bin:$PATH
 
+#gradle path setting
+export GRADLE_HOME=$HOME/tools/gradle
+export PATH=$GRADLE_HOME/bin:$PATH
+
 PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 
+<<<<<<< HEAD
 export M2_HOME=/home/hipin/tools/maven
 
 export PATH=$PATH:$M2_HOME/bin
@@ -91,6 +105,20 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export GRADLE_HOME=/home/hipin/tools/gradle-1.12
 
 export PATH=$PATH:$GRADLE_HOME/bin
+=======
+# ANDROID_HOME
+export ANDROID_HOME=$HOME/tools/android-studio/sdk
+
+PATH=$ANDROID_HOME/platform-tools:$PATH
+
+
+#GRADLE
+export GRADLE_HOME=$HOME/tools/gradle
+
+PATH=$GRADLE_HOME/bin:$PATH
+
+
+>>>>>>> f3304b4ec1727dd43d2abf47ba6b062c02caefc2
 
 #vim tags
 function _get_tags {

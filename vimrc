@@ -340,50 +340,21 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
     "\ }
 
     " --- taglist
-    nmap <silent><F8> :TlistToggle<CR>
+    " nmap <silent><F8> :TlistToggle<CR>
     " imap <silent><F8> <C-o>:TlistToggle<CR>
     " let Tlist_Use_SingleClick = 1
     " let Tlist_Use_Right_Window = 1
     " let Tlist_Show_One_File = 1
     " let tlist_php_settings = 'php;c:class;d:constant;f:function'
     " --- tagbar
-    nnoremap <silent><F9> :TagbarToggle<CR>
-    let g:tagbar_autofocus = 1
-    
-    let g:tagbar_type_go = {
-        \ 'ctagstype' : 'go',
-        \ 'kinds'     : [
-            \ 'p:package',
-            \ 'i:imports:1',
-            \ 'c:constants',
-            \ 'v:variables',
-            \ 't:types',
-            \ 'n:interfaces',
-            \ 'w:fields',
-            \ 'e:embedded',
-            \ 'm:methods',
-            \ 'r:constructor',
-            \ 'f:functions'
-        \ ],
-        \ 'sro' : '.',
-        \ 'kind2scope' : {
-            \ 't' : 'ctype',
-            \ 'n' : 'ntype'
-        \ },
-        \ 'scope2kind' : {
-            \ 'ctype' : 't',
-            \ 'ntype' : 'n'
-        \ },
-        \ 'ctagsbin'  : 'gotags',
-        \ 'ctagsargs' : '-sort -silent'
-    \ }
+    nmap <F4> :TagbarToggle<CR>
 
     " --- goimports
     autocmd BufWritePre *.go :Fmt
 
 
     " --- nerdtree
-    nnoremap <silent><F5> :NERDTreeToggle<CR>
+    nnoremap <silent><F3> :NERDTreeToggle<CR>
 
     " --- gitgutter
     highlight clear SignColumn
