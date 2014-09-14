@@ -47,18 +47,18 @@ alias cls='clear'
 alias ~='cd ~'
 
 #GOPATH
-export DEP=$HOME/projs/dep/go
-export GOPATH=$DEP:$GOPATH
+# export DEP=$HOME/projs/dep/go
+# export GOPATH=$DEP:$GOPATH
 
-export PROJS=$HOME/projs
-export GOPATH=$PROJS/go:$GOPATH
+# export PROJS=$HOME/projs
+# export GOPATH=$PROJS/go:$GOPATH
 
 #Go Envirement
-export GOROOT=$HOME/tools/go
-export GOARCH=amd64
-export GOOS=linux
+# export GOROOT=$HOME/tools/go
+# export GOARCH=amd64
+# export GOOS=linux
 
-export PATH=$GOROOT/bin:${GOPATH://bin//}/bin:$PATH
+# export PATH=$GOROOT/bin:${GOPATH://bin//}/bin:$PATH
 
 
 # ANDROID SDK
