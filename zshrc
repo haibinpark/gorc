@@ -80,6 +80,18 @@ export PATH=$HOME/.bin:$PATH
 
 PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 
+export M2_HOME=/home/hipin/tools/maven
+
+export PATH=$PATH:$M2_HOME/bin
+
+export ANDROID_HOME=/home/hipin/tools/android-sdk
+
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export GRADLE_HOME=/home/hipin/tools/gradle-1.12
+
+export PATH=$PATH:$GRADLE_HOME/bin
+
 #vim tags
 function _get_tags {
   [ -f ./tags ] || return
