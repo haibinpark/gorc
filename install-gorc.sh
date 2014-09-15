@@ -18,3 +18,5 @@ fi
 
 #create tmux shell
 ln -sf ~/.vim/init-tmux.sh ~/.bin/sm
+
+export PATH=~/.bin:$PATH
