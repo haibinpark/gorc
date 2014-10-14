@@ -46,6 +46,13 @@ alias cls='clear'
 #cd ~
 alias ~='cd ~'
 
+#define bee alias
+alias g:a="bee generate appcode"
+alias g:m="bee generate model"
+alias g:c="bee generate controller"
+alias g:v="bee generate view"
+alias g:mi="bee generate migration"
+
 #GOPATH
 export GOPATH=/gopath:$GOPATH
 
